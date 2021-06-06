@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid blue;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+}
+
+.item {
+grid-column-start: 1;
+grid-column-end: 3;/* this particular item spans 2 columns*/
+grid-row-start: 1;
+grid-row-end: 3; /* this particular item spans 2 rows*/
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>Illustrating the grid-column & grid-row  start & end properties</h1>
+
+<div class="grid-container">
+  <div class="item">1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+
+</div>
+
+</body>
+</html>
